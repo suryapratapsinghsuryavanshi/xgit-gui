@@ -8,9 +8,10 @@ function createWindow() {
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }
-    })
+    });
 
-    win.loadFile('index.html')
+    win.loadFile('index.html');
+    win.setIcon("./assets/lgog-xgit.png");
 }
 
 app.whenReady().then(() => {

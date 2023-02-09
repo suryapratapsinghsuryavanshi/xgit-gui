@@ -1,5 +1,5 @@
 {
-  "name": "xgit-gui",
+  "name": "XGit",
   "version": "0.0.1",
   "description": "To provide flexibility to committers with a simple Git client GUI form.",
   "main": "index.js",
