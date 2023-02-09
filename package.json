@@ -1,0 +1,15 @@
+{
+  "name": "xgit-gui",
+  "version": "0.0.1",
+  "description": "To provide flexibility to committers with a simple Git client GUI form.",
+  "main": "index.js",
+  "repository": "https://github.com/suryapratapsinghsuryavanshi/xgit-gui.git",
+  "author": "Suryapratap Singh Suryavanshi <suryprtaps@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^23.0.0"
+  }
+}
