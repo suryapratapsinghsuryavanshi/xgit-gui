@@ -21,8 +21,8 @@
     "electron": "^23.0.0"
   },
   "build": {
-    "appId": "ml.pieditor.app",
-    "productName": "PiEditor",
+    "appId": "ml.xgitgui.app",
+    "productName": "xgit",
     "mac": {
         "category": "public.app-category.lifestyle",
         "target": "pkg"
