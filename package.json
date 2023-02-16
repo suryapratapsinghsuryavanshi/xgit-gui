@@ -7,9 +7,39 @@
   "author": "Suryapratap Singh Suryavanshi <suryprtaps@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "win-build": "electron-builder --windows",
+    "win-release": "electron-builder --windows --publish=always",
+    "linux-build": "electron-builder --linux",
+    "linux-release": "electron-builder --linux --publish=always",
+    "mac-build": "electron-builder --mac",
+    "mac-release": "electron-builder --mac --publish=always",
+    "build": "electron-builder",
+    "release": "electron-builder --publish=always"
   },
   "devDependencies": {
     "electron": "^23.0.0"
+  },
+  "build": {
+    "appId": "ml.pieditor.app",
+    "productName": "PiEditor",
+    "mac": {
+        "category": "public.app-category.lifestyle",
+        "target": "pkg"
+    },
+    "dmg": {
+        "icon": false
+    },
+    "linux": {
+        "target": [
+            "deb",
+            "AppImage"
+        ],
+        "category": "Office"
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true
+    }
   }
 }
