@@ -16,7 +16,7 @@
     "mac-release": "electron-builder --mac --publish=always",
     "build": "electron-builder",
     "release": "electron-builder --publish=always",
-    "preinstall": "yarn"
+    "preinstall": "yarn install"
   },
   "devDependencies": {
     "electron": "^23.0.0"
